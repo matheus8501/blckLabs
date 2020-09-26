@@ -1,0 +1,238 @@
+@font-face{
+    font-family: fonteApresentacao; 
+    src: url(../fonts/Nordic\ Alternative\ Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+body{
+    /* font-family: 'Google Sans'; */
+    font-family: arial;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: rgb(30, 30, 30);
+    color: rgb(153, 153, 153);
+}
+
+.headerSite{
+    background-image: url(../images/fundo.jpg);
+    /* background-position: center top; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+nav{
+    float: right;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    border-bottom: solid rgba(255,255,255,0) 1px;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    border-bottom: solid white 2px;
+    color: white;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+#bemVindo{
+    margin-top: 200px;
+    font-size: 72px;
+    margin-bottom: 0;
+    font-family: 'fonteApresentacao';
+    /* font-weight: bold; */
+    color: white;
+}
+
+#apresentacao{
+    /* font-family: 'fonteApresentacao'; */
+    /* font-weight: bold; */
+    color: white;
+    font-size: 36px;
+}
+
+.contentSite, .contentSite3,  .contentSite5{
+    padding: 50px 0;
+}
+
+.contentSite3 img{
+    width: 350px;
+    height: 230px;
+    padding: 10px 0;
+}
+
+.contentSite3 a, :hover{
+    color: rgb(153, 153, 153);
+    text-decoration-line: none;
+}
+
+.contentSite h1, .contentSite2 h1, .contentSite3 h1, .contentSite4 h1, .contentSite5 h1{
+    font-size: 50px;
+    font-weight: bold; 
+}
+
+.contentSite h5, h3, .contentSite3 h5, h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* [data-anime]{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 90px;
+    background-color: rgba(0, 0, 0, .2);
+} */
+
+.contentSite2{
+    background-image: url(../images/ft_05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 250px;
+    padding-bottom: 250px;
+    color: rgba(255,255,255,1);
+}
+
+.contentSite2 h1{
+    font-weight: bold;
+}
+
+.contentSite4{
+    background-image: url(../images/ft_07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 250px;
+    padding-bottom: 250px;
+    color: rgba(255,255,255,1);
+}
+
+footer{
+    text-align: center;
+    padding: 50px 0 10px 0;
+    font-size: 18px;
+}
+
+.pessoa{
+    height: 100px;
+    width: 100px;
+    margin: 30px auto 10px auto;
+    display: block;
+    border-radius: 100px;
+}
+
+.icons{
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    display: block;
+    filter: contrast(0%) !important;
+}
+
+.social:hover{
+    filter: contrast(100%) !important;
+}
+
+.lacunas{
+    padding: 0 0 50px 0;
+    background-color: rgb(30, 30, 30);
+}
+
+.lacunas input{
+    background-color: rgb(30, 30, 30);
+    padding: 25px 0 25px 10px;
+}
+
+form{
+    background-color: rgb(30, 30, 30);
+}
+
+.btn-outline{
+    background: rgba(0, 0, 0, 0);
+    border: solid rgb(153, 153, 153) 1px;
+    color: rgb(153, 153, 153);
+    font-size: 20px;
+}
+
+.btn-outline:hover{
+    background: rgb(153, 153, 153);
+    color: rgb(30,30,30)
+}
+
+.contentSite6{
+    background: rgb(22, 22, 22) !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+  [data-anime="top"] {
+    transform: translate3d(0px, -50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0px, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 600px) {
+    
+}
+
+.conteudo::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.conteudo::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius:  50px;
+    overflow: auto;
+}
